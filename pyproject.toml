@@ -5,9 +5,18 @@ name = "file_handler"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
+Django = "3.2"
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
+commitizen = "^2.20.5"
+pre-commit = "^2.17.0"
+wemake-python-styleguide = "^0.16.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version = "0.0.1"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
