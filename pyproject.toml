@@ -1,0 +1,14 @@
+[tool.poetry]
+authors = ["ramilabd <ramsmart@mail.ru>"]
+description = ""
+name = "file_handler"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
