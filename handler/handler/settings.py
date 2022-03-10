@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'handler.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'file_handler_db',
+        'USER': 'wanderer',
+        'PASSWORD': '0020',
+        'HOST': '127.0.0.1',
+        'PORT': '5432'
     }
 }
 
