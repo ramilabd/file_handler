@@ -816,7 +816,7 @@ typing_extensions = ">=3.6,<5.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "4f7eedc994b7061e4edd7945882bdd75836cb5539829faa6579a06756975f56a"
+content-hash = "ac3d9cd47d574fe9ff678bf0e1527b16ebc12dfba60f0afccaeb12048e2555c1"
 
 [metadata.files]
 add-trailing-comma = [
