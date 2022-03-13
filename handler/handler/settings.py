@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'text_handler',
     'corsheaders',
     'rest_framework',
-
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -149,21 +150,3 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:3000',
 ]
-
-# settings djangorestframework-simplejwt
-
-LOGIN_URL = "/api/v1/signin"
-
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=2),
-}
-
-# settings django-rest-framework
-
-REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": ["rest_framework_simplejwt.authentication.JWTAuthentication"],
-    "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
-    "TEST_REQUEST_DEFAULT_FORMAT": "json",
-    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.DjangoModelPermissions",),
-}
